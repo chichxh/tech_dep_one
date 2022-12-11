@@ -8,6 +8,28 @@
   font-weight: 600;
   src: url(../fonts/square721bdexbtcyr_bold.otf);
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shine {
+  0% {
+    background-color: #DAFF45;
+  }
+  30% {
+    background-color: #e7ff88;
+  }
+  60% {
+    background-color: #DAFF45;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -59,6 +81,7 @@ body {
   content: url(../img/services_ico.svg);
   position: absolute;
   top: 40px;
+  animation: spin 4s linear infinite;
 }
 .main .left span {
   color: #1a1a1a;
@@ -78,6 +101,7 @@ body {
   text-decoration: none;
   color: #000;
   transition: 0.3s;
+  animation: shine 2s ease-in infinite;
 }
 .main .right button:hover {
   cursor: pointer;

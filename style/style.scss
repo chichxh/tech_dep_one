@@ -2,6 +2,30 @@
 @import "vars.scss";
 @import "mixin.scss";
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shine {
+    0% {
+        background-color: $green;
+    }
+    30% {
+        background-color: $green-2;
+    }
+    60% {
+        background-color: $green;
+    }   
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -55,6 +79,7 @@ body {
                 content: url(../img/services_ico.svg);
                 position: absolute;
                 top: 40px;
+                animation: spin 4s linear infinite;
             }
         }
 
@@ -78,6 +103,7 @@ body {
             text-decoration: none;
             color: #000;
             transition: 0.3s;
+            animation: shine 2s ease-in infinite;
 
             &:hover {
                 cursor: pointer;
