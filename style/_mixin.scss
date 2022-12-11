@@ -1,0 +1,9 @@
+@mixin border {
+    border: 1px solid $border;
+}
+
+@mixin headline {
+    font-family: 'Square721';
+    font-size: 3rem;
+    text-transform: uppercase;
+}

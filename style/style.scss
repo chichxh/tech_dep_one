@@ -1,0 +1,404 @@
+@import "fonts.scss";
+@import "vars.scss";
+@import "mixin.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 150px;
+    padding: 0;
+    background-color: $bg;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Square721';
+    text-transform: uppercase;
+
+    .header_item {
+        width: 16.6%;
+        @include border;
+        text-align: center;
+        
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+
+            &:hover {
+                color: #aeaeae;
+            }
+        }
+    }
+}
+
+.main {
+    display: flex;
+    padding: 0 5%;
+    @include border;
+    
+    .left {
+        width: 50%;
+
+        h1 {
+            @include headline;
+            color: $purple;
+            font-size: 5.4rem;
+            position: relative;
+
+            &::after {
+                content: url(../img/services_ico.svg);
+                position: absolute;
+                top: 40px;
+            }
+        }
+
+        span {
+            color: $bg;
+            text-shadow: -3px -3px 0 $purple, 3px -3px 0 $purple, -3px 3px 0 $purple, 3px 3px 0 $purple;
+        }
+    }
+
+    .right {
+        width: 50%;
+        padding: 0 10%;
+        font-family: 'OpenSans';
+        padding-top: 315px;
+
+        button {
+            background-color: $green;
+            padding: 20px 50px;
+            font-family: 'OpenSans';
+            font-weight: 600;
+            text-decoration: none;
+            color: #000;
+            transition: 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $green-2;
+            }
+        }
+    }
+}
+
+.pros {
+    display: flex;
+    font-family: 'OpenSans';
+    font-weight: 600;
+
+    .item {
+        width: 25%;
+        padding: 10px 50px;
+        @include border;
+        
+        p {
+            position: relative;
+
+            &::before {
+                content: url(../img/green_ico.svg);
+                position: absolute;
+                top: 8px;
+                left: -30px;
+            }
+        }
+    }
+}
+
+.space {
+    @include border;
+    height: 97px;
+}
+
+.about_me {
+    display: flex;
+
+    .left {
+        width: 50%;
+        @include border;
+        padding-top: 133px;
+        text-align: center;
+    }
+
+    .right {
+        width: 50%;
+
+        .top {
+            padding: 5% 10%;
+            @include border;
+
+            h1 {
+                color: $purple;
+                @include headline;
+            }
+
+            p {
+                font-family: 'OpenSans';
+
+                span {
+                    color: $green;
+                }
+            }
+        }
+        .bottom {
+            padding: 5% 10%;
+            @include border;
+
+            span {
+                display: flex;
+
+                h1 {
+                    @include headline;
+                    color: $green;
+                }
+                
+                p {
+                    font-family: 'OpenSans';
+                    margin-top: 38px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.with_me {
+    .top {
+        @include border;
+        text-align: center;
+        h1 {
+            @include headline;
+            color: $purple;
+        }
+    }
+    .bottom {
+        display: flex;
+
+        .item {
+            font-family: 'OpenSans';
+            width: 33.3%;
+            @include border;
+            padding: 2% 4%;
+
+            .green {
+                color: $green;
+            }
+        }
+    }
+}
+
+.services {
+    @include border;
+
+    h1 {
+        @include headline;
+        padding-left: 4%;
+        color: $purple;
+    }
+
+    .all {
+        display: flex;
+        .left {
+            width: 50%;
+
+            div {
+                @include border;
+                border-right: none;
+                padding: 25px 0;
+            }
+
+            p {
+                font-family: 'OpenSans';
+                font-weight: 600;
+                padding-left: 8%;
+            }
+        }
+
+        .right {
+            width: 33%;
+            padding-left: 12%;
+
+            .top {
+                font-family: 'OpenSans';
+            }
+
+            .bottom {
+                font-family: 'OpenSans';
+                color: $green;
+                margin-top: 255px;
+
+                p {
+                    position: relative;
+
+                    &::before {
+                        content: url(../img/services_ico.svg);
+                        position: absolute;
+                        left: -90px;
+                        top: -50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.socials {
+    display: flex;
+
+    .item {
+        @include border;
+        width: 25%;
+        padding: 0 4%;
+        font-family: 'OpenSans';
+
+        &:first-child {
+            font-size: 1.2rem;
+            color: $green;
+        }
+        
+        p:first-child {
+            font-weight: 600;
+        }
+    }
+}
+
+.cases {
+    display: flex;
+
+    .left {
+        width: 50%;
+
+        .top {
+            @include border;
+            height: 130px;
+            padding-left: 8%;
+            h1 {
+                @include headline;
+                color: $purple;
+            }
+        }
+
+        .middle {
+            @include border;
+            padding: 0 8% 0 8%;
+            font-family: 'OpenSans';
+
+            p:first-child {
+                font-weight: 600;
+            }
+        }
+
+        .bottom {
+            @include border;
+            padding-left: 8%;
+            h1 {
+                @include headline;
+                color: $green;
+            }
+            span {
+                display: flex;
+                p {
+                    font-family: 'OpenSans';
+                    margin-top: 50px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .right {
+        width: 50%;
+
+        .top {
+            @include border;
+            height: 90px;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 40px;
+        }
+
+        .bottom {
+            @include border;
+            padding: 32px;
+            text-align: center;
+        }
+    }
+}
+
+.form {
+    @include border;
+    padding: 5% 4%;
+    background-color: $purple-2;
+
+    h1 {
+        @include headline;
+    }
+
+    p {
+        font-family: 'OpenSans';
+    }
+
+    input {
+        font-family: 'OpenSans';
+        background-color: transparent;
+        border: 2px solid #c8c8c8;
+        width: 25%;
+        padding: 20px 0px 20px 15px;
+        margin-right: 10px;
+        color: #fff;
+        transition: 0.3s;
+
+        &::placeholder {
+            color: #fff;
+        }
+
+        &:focus-visible {
+            outline: none;
+            border: 2px solid #fff;
+        }
+
+        &:hover {
+            border: 2px solid #fff;
+        }
+    }
+
+    input[type=submit] {
+        font-weight: 600;
+        color: #000;
+        border: none;
+        background-color: $green;
+
+        &:hover {
+            background-color: $green-2;
+        }
+    }
+}
+
+.footer {
+    .top {
+        display: flex;
+
+        .item {
+            @include border;
+            width: 25%;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Square721';
+            text-transform: uppercase;
+        }
+    }
+    .bottom {
+        @include border;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'OpenSans';
+        font-size: 0.8rem;
+        color: #c8c8c8;
+    }
+}

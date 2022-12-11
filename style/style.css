@@ -1,0 +1,370 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  src: url(../fonts/OpenSans.ttf);
+}
+@font-face {
+  font-family: "Square721";
+  font-weight: 600;
+  src: url(../fonts/square721bdexbtcyr_bold.otf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 150px;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Square721";
+  text-transform: uppercase;
+}
+.header .header_item {
+  width: 16.6%;
+  border: 1px solid #262626;
+  text-align: center;
+}
+.header .header_item a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.header .header_item a:hover {
+  color: #aeaeae;
+}
+
+.main {
+  display: flex;
+  padding: 0 5%;
+  border: 1px solid #262626;
+}
+.main .left {
+  width: 50%;
+}
+.main .left h1 {
+  font-family: "Square721";
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #915DFF;
+  font-size: 5.4rem;
+  position: relative;
+}
+.main .left h1::after {
+  content: url(../img/services_ico.svg);
+  position: absolute;
+  top: 40px;
+}
+.main .left span {
+  color: #1a1a1a;
+  text-shadow: -3px -3px 0 #915DFF, 3px -3px 0 #915DFF, -3px 3px 0 #915DFF, 3px 3px 0 #915DFF;
+}
+.main .right {
+  width: 50%;
+  padding: 0 10%;
+  font-family: "OpenSans";
+  padding-top: 315px;
+}
+.main .right button {
+  background-color: #DAFF45;
+  padding: 20px 50px;
+  font-family: "OpenSans";
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+.main .right button:hover {
+  cursor: pointer;
+  background-color: #e7ff88;
+}
+
+.pros {
+  display: flex;
+  font-family: "OpenSans";
+  font-weight: 600;
+}
+.pros .item {
+  width: 25%;
+  padding: 10px 50px;
+  border: 1px solid #262626;
+}
+.pros .item p {
+  position: relative;
+}
+.pros .item p::before {
+  content: url(../img/green_ico.svg);
+  position: absolute;
+  top: 8px;
+  left: -30px;
+}
+
+.space {
+  border: 1px solid #262626;
+  height: 97px;
+}
+
+.about_me {
+  display: flex;
+}
+.about_me .left {
+  width: 50%;
+  border: 1px solid #262626;
+  padding-top: 133px;
+  text-align: center;
+}
+.about_me .right {
+  width: 50%;
+}
+.about_me .right .top {
+  padding: 5% 10%;
+  border: 1px solid #262626;
+}
+.about_me .right .top h1 {
+  color: #915DFF;
+  font-family: "Square721";
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.about_me .right .top p {
+  font-family: "OpenSans";
+}
+.about_me .right .top p span {
+  color: #DAFF45;
+}
+.about_me .right .bottom {
+  padding: 5% 10%;
+  border: 1px solid #262626;
+}
+.about_me .right .bottom span {
+  display: flex;
+}
+.about_me .right .bottom span h1 {
+  font-family: "Square721";
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #DAFF45;
+}
+.about_me .right .bottom span p {
+  font-family: "OpenSans";
+  margin-top: 38px;
+  margin-left: 10px;
+}
+
+.with_me .top {
+  border: 1px solid #262626;
+  text-align: center;
+}
+.with_me .top h1 {
+  font-family: "Square721";
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #915DFF;
+}
+.with_me .bottom {
+  display: flex;
+}
+.with_me .bottom .item {
+  font-family: "OpenSans";
+  width: 33.3%;
+  border: 1px solid #262626;
+  padding: 2% 4%;
+}
+.with_me .bottom .item .green {
+  color: #DAFF45;
+}
+
+.services {
+  border: 1px solid #262626;
+}
+.services h1 {
+  font-family: "Square721";
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-left: 4%;
+  color: #915DFF;
+}
+.services .all {
+  display: flex;
+}
+.services .all .left {
+  width: 50%;
+}
+.services .all .left div {
+  border: 1px solid #262626;
+  border-right: none;
+  padding: 25px 0;
+}
+.services .all .left p {
+  font-family: "OpenSans";
+  font-weight: 600;
+  padding-left: 8%;
+}
+.services .all .right {
+  width: 33%;
+  padding-left: 12%;
+}
+.services .all .right .top {
+  font-family: "OpenSans";
+}
+.services .all .right .bottom {
+  font-family: "OpenSans";
+  color: #DAFF45;
+  margin-top: 255px;
+}
+.services .all .right .bottom p {
+  position: relative;
+}
+.services .all .right .bottom p::before {
+  content: url(../img/services_ico.svg);
+  position: absolute;
+  left: -90px;
+  top: -50px;
+}
+
+.socials {
+  display: flex;
+}
+.socials .item {
+  border: 1px solid #262626;
+  width: 25%;
+  padding: 0 4%;
+  font-family: "OpenSans";
+}
+.socials .item:first-child {
+  font-size: 1.2rem;
+  color: #DAFF45;
+}
+.socials .item p:first-child {
+  font-weight: 600;
+}
+
+.cases {
+  display: flex;
+}
+.cases .left {
+  width: 50%;
+}
+.cases .left .top {
+  border: 1px solid #262626;
+  height: 130px;
+  padding-left: 8%;
+}
+.cases .left .top h1 {
+  font-family: "Square721";
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #915DFF;
+}
+.cases .left .middle {
+  border: 1px solid #262626;
+  padding: 0 8% 0 8%;
+  font-family: "OpenSans";
+}
+.cases .left .middle p:first-child {
+  font-weight: 600;
+}
+.cases .left .bottom {
+  border: 1px solid #262626;
+  padding-left: 8%;
+}
+.cases .left .bottom h1 {
+  font-family: "Square721";
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #DAFF45;
+}
+.cases .left .bottom span {
+  display: flex;
+}
+.cases .left .bottom span p {
+  font-family: "OpenSans";
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.cases .right {
+  width: 50%;
+}
+.cases .right .top {
+  border: 1px solid #262626;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+.cases .right .bottom {
+  border: 1px solid #262626;
+  padding: 32px;
+  text-align: center;
+}
+
+.form {
+  border: 1px solid #262626;
+  padding: 5% 4%;
+  background-color: #7758bb;
+}
+.form h1 {
+  font-family: "Square721";
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.form p {
+  font-family: "OpenSans";
+}
+.form input {
+  font-family: "OpenSans";
+  background-color: transparent;
+  border: 2px solid #c8c8c8;
+  width: 25%;
+  padding: 20px 0px 20px 15px;
+  margin-right: 10px;
+  color: #fff;
+  transition: 0.3s;
+}
+.form input::placeholder {
+  color: #fff;
+}
+.form input:focus-visible {
+  outline: none;
+  border: 2px solid #fff;
+}
+.form input:hover {
+  border: 2px solid #fff;
+}
+.form input[type=submit] {
+  font-weight: 600;
+  color: #000;
+  border: none;
+  background-color: #DAFF45;
+}
+.form input[type=submit]:hover {
+  background-color: #e7ff88;
+}
+
+.footer .top {
+  display: flex;
+}
+.footer .top .item {
+  border: 1px solid #262626;
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+  font-family: "Square721";
+  text-transform: uppercase;
+}
+.footer .bottom {
+  border: 1px solid #262626;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "OpenSans";
+  font-size: 0.8rem;
+  color: #c8c8c8;
+}
+
+/*# sourceMappingURL=style.css.map */
